@@ -26,7 +26,7 @@
   function MenuSearchService($http, ENDPOINT) {
     let service = this;
 
-    let found = [];
+    let found;
     service.getMatchedMenuItems = function (searchTerm) {
       return $http({ url: ENDPOINT }).then(function (result) {
         
